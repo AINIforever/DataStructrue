@@ -123,7 +123,7 @@ int push(int i, elemtp x){
 }
 
 int pop(int i){
-    if(i<0 || i>1){
+    if(i<0 || i>1){  
         printf("栈号不对");
         exit(0);
     }
