@@ -94,7 +94,7 @@ int kth_elem(int A[], int low, int high, int k){
 }
 
 //找出一半最小的和一半最大的元素
-inr setPartition(int A[], int n){
+int setPartition(int A[], int n){
     int pivotkey, low=0,low0=0,high=n-1,high0=n-1,flag=1,k=n/2,i;
     int s1=0,s2=0;
     while(flag){
@@ -125,3 +125,4 @@ inr setPartition(int A[], int n){
     for(i=k;i<n;i++) s2 += A[i];
     return s1-s2;
 }
+
